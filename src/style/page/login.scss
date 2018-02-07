@@ -1,0 +1,122 @@
+// login
+// vairables
+$btn-bg-color:#FF8C00;
+$btn-color:#fff;
+$btn-width: 295px;
+$btn-height: 40px;
+
+
+//
+.login-head {
+  padding:31px 0 34px 40px;
+  background-color: #fff;
+  font-size: 0;
+}
+.login-body {
+  position: absolute;
+  top:90px;
+  bottom: 78px;
+  left:0;
+  width: 100%;
+  background: url('../../assets/images/login-bg.png') no-repeat;
+  background-size:100% 100%;
+}
+.login-form {
+  float:right;
+  margin-right: 78px;
+  margin-top: 110px;
+  width:350px;
+  height:380px;
+  padding:40px 27px 22px;
+  border-radius: 8px;
+  background-color: #fff;
+  >h3 {
+    margin-bottom: 27px;
+    line-height:25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color:#666;
+  }
+  form{
+    i.error,
+    div.error,
+    input.error {
+      color:#F74158;
+      border-bottom-color: #F74158;
+    }
+    >div {
+      height:47px;
+      padding-top: 20px;
+      border-bottom:1px solid #eee;
+      &.auth-code {
+        position: relative;
+        width:190px;
+        margin-bottom: 20px;
+        input {
+          width:100px;
+        }
+        .auth-code-detail {
+          position: absolute;
+          left:190px;
+          bottom:4px;
+          margin-left:12px;
+          width:90px;
+          height:32px;
+          background-color: #BEC2C5;
+        }
+      }
+      .iconfont {
+        margin-right: 20px;
+      }
+      input {
+        font-size:14px;
+        color:#333;
+        border:none;
+        outline: 0;
+      }
+
+    }
+    p.error {
+      color:#F74158;
+      font-size:12px;
+      i {
+        font-size:12px;
+        margin-right:6px;
+      }
+    }
+  }
+  .login-btn {
+    display: block;
+    width:$btn-width;
+    height:$btn-height;
+    margin-top: 8px;
+    line-height:40px;
+    background:$btn-bg-color;
+    border-radius: 4px ;
+    text-align: center;
+    font-size: 16px;
+    color:$btn-color;
+  }
+  .find-pass {
+    margin-top:13px;
+    text-align: right;
+    a {
+      color:#aaa;
+      font-size: 13px;
+    }
+  }
+}
+.login-foot {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:78px;
+  padding-top: 18px;
+  background-color: #fff;
+  text-align: center;
+  font-size:10px;
+  color:#aaa;
+  line-height:14/12;
+}

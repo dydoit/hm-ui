@@ -1,0 +1,36 @@
+//- login.pug
+extends ../../layout/main.pug
+
+append styles
+  link(rel="stylesheet", href="/css/page/login.css")
+
+block title
+  title 登录
+
+block content
+  // 登录页面头部
+  include ../../layout/login-head.pug
+
+  div(class="login-body")
+    // 登录表单
+    div(class="login-form")
+      h3 后台登录
+      form(action="#")
+        div(class="username")
+          i(class="iconfont icon-user")
+          input(type="text",placeholder="请输入用户名")
+        div(class="password")
+          i(class="iconfont icon-password")
+          input(type="password",placeholder="请输入密码")
+        div(class="auth-code error")
+          i(class="iconfont icon-validation")
+          input(class="error",type="text", placeholder="请输入验证码")
+          span(class="auth-code-detail")
+        p(class="error")
+          i(class="iconfont icon-message")
+          span 验证码错误
+        a(class="login-btn",href="javascript:;") 登录
+      div(class="find-pass")
+        a(href="#") 忘记密码
+    //  登录页面脚步
+  include ../../layout/login-foot.pug

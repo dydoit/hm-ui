@@ -1,0 +1,26 @@
+extends ../../layout/index-main.pug
+append styles
+  link(rel="stylesheet", href="/css/site/site.css")
+
+block title
+  title 审核管理
+
+block content-body
+  ol.breadcrumb
+    li  首页
+    li.active 审核管理
+  ol.nav.nav-tabs
+      li.active
+        a 活动审核
+      li
+        a 资讯审核
+      li
+        a 二级网点审核
+      li
+        a 认证审核
+  #panels
+    .panel
+
+
+
+

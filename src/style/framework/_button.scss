@@ -1,0 +1,28 @@
+//buttons
+.btn {
+  display : inline-block;
+  text-align : center;
+  vertical-align : middle;
+  cursor : pointer;
+  white-space : nowrap;
+  user-select : none;
+  border: 1px solid transparent;
+  outline: none;
+
+}
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color,$btn-primary-bg,$btn-primary-border);
+}
+// Button Sizes
+.btn-sm {
+  @include button-size($btn-sm-width,$btn-primary-height,$font-size-base,$btn-border-radius-base);
+}
+.btn-mid {
+  @include button-size($btn-mid-width,$btn-primary-height,$font-size-base,$btn-border-radius-base);
+}
+.btn-big {
+  @include button-size($btn-big-width,$btn-primary-height,$font-size-base,$btn-border-radius-base);
+}

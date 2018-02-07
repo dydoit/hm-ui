@@ -1,0 +1,17 @@
+.profile {
+  form {
+    width: 80%;
+
+    .row {
+      .form-group {
+        margin-bottom: 30px;
+      }
+
+      &:last-child {
+        // 上一个 .row > .form-group 的 margin-bottom: 30px
+        // 加上 padding-top: 10px, 空白空间为 40px;
+        padding-top: 10px;
+      }
+    }
+  }
+}

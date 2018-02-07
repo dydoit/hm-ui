@@ -1,0 +1,18 @@
+//- layout main.pug
+doctype html
+html
+  head
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+    //- 替换为具体页面引用的样式
+    block styles
+      link(rel="stylesheet", href="//at.alicdn.com/t/font_555036_ruqfvd0asxe3tyb9.css")
+      link(rel="stylesheet", href="/css/framework/framework.css")
+    //- 替换为具体页面的标题
+    block title
+      title default title
+  body
+    .wrapper
+      block content
+    block scripts
+      script(src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js")

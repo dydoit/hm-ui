@@ -1,0 +1,25 @@
+//- 找回密码一
+extends ../../layout/main.pug
+append styles
+  link(rel="stylesheet", href="/css/page/find-pass.css")
+
+block title
+  title 找回密码一
+
+block content
+  include ../../layout/login-head.pug
+  div(class="find-wrapper")
+    h4 找回密码
+
+    div(class="find-content")
+        div(class="set-succ")
+          i(class="iconfont icon-succeed")
+          p 设置成功
+          p 请牢记新密码
+        div
+          a(class="next-btn",href="javascript:;") 登录
+
+
+
+
+  include ../../layout/login-foot.pug

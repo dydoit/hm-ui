@@ -1,0 +1,80 @@
+//- orderDetails.pug
+extends ../../layout/main.pug
+
+append styles
+  link(rel="stylesheet", href="/css/site/site.css")
+
+
+block title
+  title 订单详情
+
+block content
+  include ../../component/header.pug
+  - var classes = ['main'];
+  div(class=classes)
+    include ../../component/sidebar.pug
+    .content
+      .content-body
+          ol(class='breadcrumb')
+            li
+              a(href='javascript:;') 首页
+            li
+              a(href='javascript:;') 订单管理
+            li(class='active') 订单详情
+          div(class='admin-children pb34') 
+            div(class='plr20')
+              div(class='table-responsive table-bordered')
+                table(class="table table-vertical")
+                  tbody 
+                    tr
+                      th 订单编号
+                      td 1508584840065 
+                      th 订单状态
+                      td 交易完成 
+                    tr
+                      th 下单时间
+                      td 2017-10-24 13:46:20
+                      th 付款时间
+                      td 2017-10-24 13:46:20 
+                    tr
+                      th 订单金额
+                      td ￥6000
+                      th 实付金额
+                      td ￥210 
+                    tr
+                      th 订单来源
+                      td PC/WAP/微商城
+                      th 支付方式
+                      td 微信/支付宝/银联 
+                    tr
+                      th 使用优惠券
+                      td 满100减10优惠券
+                      th 优惠券优惠金额
+                      td ￥10 
+                    tr
+                      th 使用积分
+                      td 250
+                      th 积分抵扣金额
+                      td ￥5 
+                    tr
+                      th 联系人
+                      td 彭于晏
+                      th 手机号码
+                      td 13850144066 
+                    tr
+                      th 收货地址
+                      td 浙江省杭州市建业路511号27楼
+                      th 物流费用
+                      td ￥30 
+                    tr
+                      th 物流公司
+                      td 顺丰
+                      th 物流单号
+                      td 829791479327502540 
+                    tr
+                      th 订单备注
+                      td(colspan='3')
+      include ../../component/footer.pug              
+            
+append scripts
+  script(src="/js/profile.js")

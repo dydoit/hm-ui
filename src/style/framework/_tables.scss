@@ -1,0 +1,81 @@
+// tables
+table {
+  background-color: $table-bg;
+}
+th {
+  text-align: left;
+  &:first-child{
+    padding-left:24px;
+  }
+}
+// 基本样式
+.table {
+  width:100%;
+  margin-bottom: 20px;
+  thead {
+    height:50px;
+    line-height: 50px;
+    background-color:#f5f5f5;
+    border:1px solid #f5f5f5;
+  }
+  tbody {
+    border:1px solid #eee;
+    border-top:none;
+    tr {
+      &+tr {
+        border-top:1px solid #eee;
+      }
+      &.active,
+      &:hover {
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+      }
+      td {
+        word-break:break-all;
+        height:56px;
+        max-width: 170px;
+        padding-right: 20px;
+        vertical-align: middle;
+        &:first-child {
+          padding-left: 24px;
+        }
+        >a {
+          color:rgba(61,137,254,1);
+          &+a {
+            margin-left:8px;
+          }
+        }
+        >.check {
+          position:relative;
+          width:45px;
+          height:30px;
+          border-radius:2px;
+          border: 1px solid #eee;
+          img {
+            display:block;
+            width: 100%;
+            height:100%;
+          }
+          .uncheck {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,0.5);
+            cursor:pointer;
+            >i {
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform:translate(-50%,-50%);
+              color:#fff;
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
+}

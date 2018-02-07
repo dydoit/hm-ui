@@ -1,0 +1,35 @@
+$base-white: #fff !default;
+.header {
+    position: relative;
+    height:55px;
+    line-height: 55px;
+    background: $base-white;
+    box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    text-align: right;
+    >div{
+      display: inline-block;
+      a {color:#333;}
+      &.logo {
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 1;
+        display:table-cell;
+        vertical-align:middle;
+        width:200px;
+        background-color:#000;
+        text-align:center;
+        img {
+          vertical-align: middle;
+        }
+      }
+      &.user+div{
+        margin-left:  15px;
+        margin-right: 24px;
+      }
+      i{
+        vertical-align: bottom;
+        margin-right:5px;
+      }
+    }
+}

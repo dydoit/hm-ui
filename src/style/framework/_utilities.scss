@@ -1,0 +1,33 @@
+//common class
+// wrapper
+.wrapper {
+  position: relative;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+//floats
+.clearfix {
+  @include clearfix;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}

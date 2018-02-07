@@ -1,0 +1,173 @@
+//- audit.pug
+extends ../../layout/main.pug
+
+append styles
+  link(rel="stylesheet", href="/css/site/site.css")
+
+
+block title
+  title 审核管理
+
+block content
+  include ../../component/header.pug
+  - var classes = ['main'];
+  div(class=classes)
+    include ../../component/sidebar.pug
+    .content
+      .content-body
+          //- h3(class='admin-form-title') 首页 /
+          //-   span(class='admin-title-sel') 审核管理
+          ol(class='breadcrumb')
+            li
+              a(href='javascript:;') 首页
+            li
+              a(href='javascript:;') 订单管理
+            li(class='active') 订单详情
+          div(class='admin-children pb34')
+            ul(class='navitems clearfix')
+              li(class='nav-item active')
+                a(href='javascript:;') 活动审核
+              li(class='nav-item')
+                a(href='javascript:;') 资讯审核
+              li(class='nav-item')
+                a(href='javascript:;') 二级网点审核
+              li(class='nav-item')
+                a(href='javascript:;') 认证审核
+            .search-qute
+            div(class='list-addBox clearfix')
+              a(class='btn btn-middle btn-default fr', href='javascript:;') 导出
+            div(class='plr20')
+              div(class='table-responsive table-bordered ')
+                table(class="table table-hover")
+                  thead
+                    tr
+                      th 序号
+                      th 活动类型
+                      th 活动名称
+                      th 经销商 
+                      th 审核状态
+                      th 发布时间
+                      th 审核人
+                      th 审核时间
+                      th 操作
+                  tbody
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+                    tr
+                      td 1101234
+                      td 活动报名
+                      td 一元试驾，活动有礼
+                      td 东莞市新大地汽车贸易有限公司
+                      td 待审核
+                      td 2017-11-12 12:09:09
+                      td 海马客服01
+                      td 2017-11-12 12:09:09
+                      td 
+                        a(class='upd-item', href='javascript:;') 查看
+            div(class='page-box mt34')
+              ul(class='page-size')
+                li(class='page-size-item iconfont icon-left') &nbsp;
+                li(class='page-size-item active') 1
+                li(class='page-size-item') 2
+                li(class='page-size-item') 3
+                li(class='page-size-item') 4
+                li(class='page-size-item') 5
+                li(class='page-size-item') 6
+                li(class='page-size-item') 7
+                li(class='page-size-more') 
+                  a(href='javascript:;') ...
+                li(class='page-size-item') 10
+                li(class='page-size-item iconfont icon-right') &nbsp; 
+                p(class='page-num') 到第
+                  input(type='text') 
+                  span 页
+      include ../../component/footer.pug              
+            
+append scripts
+  script(src="/js/profile.js")

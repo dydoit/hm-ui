@@ -1,0 +1,256 @@
+//colors
+$base-color :                                         #333 !default;
+$base-light:                                          #666 !default;
+$base-lighter:                                        #aaa !default;
+$brand-primary:                                       #FF8C00 !default;
+
+//** Background color for `<body>`.
+$body-bg:                                             #F7F6F9 !default;
+
+//** Global text color on `<body>`.
+$text-color:                                          #333 !default;
+
+//##font,line-height
+$font-family-regular:                                  "PingFangSC-Regular",sans-serif !default;
+$font-family-medium:                                   "PingFangSC-Medium",sans-serif !default;
+
+$font-family-base:                                     $font-family-regular !default;
+$font-size-base:                                       13px !default;
+$font-size-large:                                      16px !default;
+$font-size-middle:                                     14px !default;
+$font-size-small:                                      12px !default;
+$line-height-base:                                     1.428571429 !default;
+
+$line-height-computed:                                 floor(($font-size-base * $line-height-base)) !default;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     7px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+$table-cell-padding:            8px !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding:  5px !default;
+
+//** Default background color used for all tables.
+$table-bg:                      transparent !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #f9f9f9 !default;
+//** Background color used for `.table-hover`.
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+//** Border color for table and cell borders.
+$table-border-color:            #ddd !default;
+
+//== Buttons
+$btn-default-color:                                 #aaa !default;
+$btn-default-bg:                                    #fff !default;
+$btn-default-border:                                #ddd !default;
+$btn-primary-color :                                #fff !default;
+$btn-primary-bg :                                     $brand-primary !default;
+$btn-primary-border :                                 transparent !default;
+
+$btn-primary-height: 34px !default;
+$btn-sm-width:  83px !default;
+$btn-mid-width: 90px !default;
+$btn-big-width: 170px !default;
+$btn-border-radius-base:    $border-radius-base !default;
+
+//== Breadcrumbs
+//
+//##
+
+$breadcrumb-padding-vertical:   20px !default;
+$breadcrumb-padding-horizontal: 0 !default;
+//** Breadcrumb text color
+$breadcrumb-color:              #9A9A9A !default;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       #262626 !default;
+//** text size
+$breadcrumb-font-size:            14px !default;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          "/" !default;
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs :                                          480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min :                                      $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone :                                       $screen-xs-min !default;
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm :                                          768px !default;
+$screen-sm-min :                                      $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet :                                      $screen-sm-min !default;
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md :                                          992px !default;
+$screen-md-min :                                      $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop :                                     $screen-md-min !default;
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg :                                          1200px !default;
+$screen-lg-min :                                      $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop :                                  $screen-lg-min !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max :                                      ($screen-sm-min - 1) !default;
+$screen-sm-max :                                      ($screen-md-min - 1) !default;
+$screen-md-max :                                      ($screen-lg-min - 1) !default;
+//== Grid system
+//
+//## Define your custom responsive grid.
+//** Number of columns in the grid.
+$grid-columns :                                       12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width :                                  30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint :                              $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max:                           ($grid-float-breakpoint - 1) !default;
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+// Small screen / tablet
+$container-tablet :                                   (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm :                                       $container-tablet !default;
+// Medium screen / desktop
+$container-desktop :                                  (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md :                                       $container-desktop !default;
+// Large screen / wide desktop
+$container-large-desktop :                            (1140px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg :                                       $container-large-desktop !default;
+//== Navs
+//
+//##
+$nav-link-padding:                          12px 36px !default;
+$nav-link-font-size:                        14px !default;
+$nav-tabs-active-link-hover-color:          $brand-primary !default;
+$nav-tabs-active-link-hover-bg:             #fff !default;
+$nav-tabs-active-link-hover-border-color:   $brand-primary !default;
+
+//== Forms
+//
+//##
+
+//** `<input>` 背景色
+$input-bg:                                            #fff !default;
+//** `<input disabled>` 背景色
+$input-bg-disabled:                                   #f7f6f9 !default;
+
+//** `<input>` 的字体颜色
+$input-color:                                         #333 !default;
+//** `<input>` 边框颜色
+$input-border:                                        #ddd !default;
+
+//** 默认 .form-control 边框圆角大小
+$input-border-radius-base:                            $border-radius-base !default;
+//** large .form-control 边框圆角大小
+$input-border-radius-large:                           $border-radius-large !default;
+//** small .form-control 边框圆角大小
+$input-border-radius-small:                           $border-radius-small !default;
+
+//** input 选中时的边框颜色
+$input-border-focus:                                  #ff8c00 !default;
+
+//** placeholder 文字颜色
+$input-color-placeholder:                             #aaa !default;
+
+//** 默认 .form-control 高度
+$input-height-base:                                   ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+//** large .form-control 高度
+$input-height-large:                                  (ceil($font-size-large * $line-height-large) * ($padding-large-vertical * 2) + 2) !default;
+//** small .form-control 高度
+$input-height-small:                                  (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+//** .form-group margin
+$form-group-margin-bottom:                             34px !default;
+
+//** input addons 的背景色
+$input-group-addon-bg:                               #eee !default;
+
+//** input addons 的边框色
+$input-group-addon-border-color:                       $input-border !default;
+
+//** 禁用状态下表单和按钮的 cursor
+$cursor-disabled:                                      not-allowed !default;
+
+// 作为表单的图片的宽度和高度
+$form-control-static-img-height:                       230px;
+$form-control-static-img-width:                        100%;
+
+//== 表单状态和 alert
+//
+// 定义表单验证返回状态和 alert 的默认颜色
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #f74158 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+// required 颜色
+$required-color:                 #ff0041;
+
+//面包屑颜色
+$breadcrumb-color:#9A9A9A;
+$breadcrumb-active:#333;
+
+//== Panels
+//
+//##
+
+$panel-bg:                        #fff !default;
+$panel-padding-top:                15px !default;
+$panel-body-padding:               20px 34px 40px !default;
+$panel-heading-padding:            10px 15px !default;
+$panel-footer-padding:             $panel-heading-padding !default;
+$panel-border-radius:              2px !default;
+$panel-heading-margin:             15px

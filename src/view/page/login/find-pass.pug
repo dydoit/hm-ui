@@ -1,0 +1,43 @@
+//- 找回密码一
+extends ../../layout/main.pug
+append styles
+  link(rel="stylesheet", href="/css/page/find-pass.css")
+
+block title
+  title 找回密码一
+
+block content
+  include ../../layout/login-head.pug
+  div(class="find-wrapper")
+    h4 找回密码
+    ul(class="find-steps")
+      li(class="find-steps-num")
+        div(class="active") 1
+        p 填写邮箱
+      li(class="line active")
+      li(class="line")
+      li(class="find-steps-num")
+        div 2
+        p 发送邮件
+      li(class="line")
+      li(class="line")
+      li(class="find-steps-num")
+        div 3
+        p 重置密码
+    div(class="find-content")
+      form(action="#")
+        div(class="email")
+          i(class="iconfont icon-mail")
+          input(type="text",placeholder="请填写公司邮箱")
+        div(class="auth-code")
+          i(class="iconfont icon-Verificationcode")
+          input(type="text",placeholder="请输入验证码")
+          span(class="code-number")
+        p(class="details")  如果收不到邮件或出现其他问题，请联系客服人员处理。联系电话：0517-85823838
+        div
+          a(class="next-btn",href="javascript:;") 下一步
+
+
+
+
+  include ../../layout/login-foot.pug

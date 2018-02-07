@@ -1,0 +1,29 @@
+//
+// Panels
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  margin-bottom: 30px;
+  padding-top: $panel-padding-top;
+  background-color: $panel-bg;
+  border-radius: $panel-border-radius;
+  box-shadow: 0 0 14px rgba(0, 0, 0, .12);
+}
+
+// Panel contents
+.panel-body {
+  padding: $panel-body-padding;
+  @include clearfix;
+}
+
+// Optional heading
+.panel-heading {
+  height: 20px;
+  border-left: 4px solid $brand-primary;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: middle;
+}

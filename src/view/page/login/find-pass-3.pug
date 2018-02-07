@@ -1,0 +1,44 @@
+//- 找回密码一
+extends ../../layout/main.pug
+append styles
+  link(rel="stylesheet", href="/css/page/find-pass.css")
+
+block title
+  title 找回密码一
+
+block content
+  include ../../layout/login-head.pug
+  div(class="find-wrapper")
+    h4 找回密码
+    ul(class="find-steps")
+      li(class="find-steps-num")
+        div(class="active") 1
+        p 填写邮箱
+      li(class="line active")
+      li(class="line active")
+      li(class="find-steps-num")
+        div(class="active") 2
+        p 发送邮件
+      li(class="line active")
+      li(class="line active")
+      li(class="find-steps-num")
+        div(class="active") 3
+        p 重置密码
+    div(class="find-content")
+      form(action="#")
+        div(class="new-password")
+          i(class="iconfont icon-cipher")
+          input(type="password",placeholder="请输入您的新密码")
+        div(class="new-password")
+          i(class="iconfont icon-cipher")
+          input(type="password",placeholder="请再次输入新密码")
+        p(class="error")
+          i(class="iconfont icon-message")
+          span 两次输入不符
+        div
+          a(class="next-btn",href="javascript:;") 下一步
+
+
+
+
+  include ../../layout/login-foot.pug

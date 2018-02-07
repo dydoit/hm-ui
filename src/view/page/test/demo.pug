@@ -1,0 +1,95 @@
+//- test.pug
+extends ../../layout/index-main.pug
+append styles
+  link(rel="stylesheet", href="/css/site/site.css")
+
+block title
+  title demo
+
+block content-body
+  ol(class="breadcrumb")
+    li
+      a(href="#") 首页
+    li
+      a(href="#") 测试
+    li 测试页面
+  ul(class="nav nav-tabs")
+    li.active
+      a(href="#") 活动审核
+    li
+      a(href="#") 资讯审核
+    li
+      a(href="#") 二级网点审核
+    li
+      a(href="#") 认证审核
+
+  .panel
+    h4.panel-heading 测试表格
+    .panel-body
+      .plr20
+        table.table
+          thead
+            tr
+              th  序号
+              th  活动类型
+              th  活动名称
+              th  经销商
+              th  审核状态
+              th  发布时间
+              th  审核人
+              th  审核时间
+              th  操作
+          tbody
+            tr
+                  td 1101234
+                  td 活动报名
+                  td 一元试驾，活动有礼
+                  td 东莞市新大地汽车贸易有限公司
+                  td 待审核
+                  td 2017-11-12 12:09:09
+                  td 海马客服01
+                  td 2017-11-12 12:09:09
+                  td
+                    a(href='javascript:;') 查看
+            tr
+              td 1101234
+              td 活动报名
+              td 一元试驾，活动有礼
+              td 东莞市新大地汽车贸易有限公司
+              td 审核不通过
+              td 2017-11-12 12:09:09
+              td 海马客服01
+              td 2017-11-12 12:09:09
+              td
+                a(href='javascript:;') 查看
+            tr
+              td 1101234
+              td 活动报名
+              td 一元试驾，活动有礼
+              td 东莞市新大地汽车贸易有限公司
+              td 待审核
+              td 2017-11-12 12:09:09
+              td 海马客服01
+              td 2017-11-12 12:09:09
+              td
+                a(href='javascript:;') 查看
+            tr
+              td 1101234
+              td 活动报名
+              td 一元试驾，活动有礼
+              td 东莞市新大地汽车贸易有限公司
+              td 待审核
+              td 2017-11-12 12:09:09
+              td
+                div.check
+                  img(src="../../assets/images/logo.png")
+                  div.uncheck
+                    i.iconfont.icon-view
+              td 2017-11-12 12:09:09
+              td
+                a(href='javascript:;') 查看
+                a(href='javascript:;') 查看
+                a(href='javascript:;') 查看
+  .panel
+    h4.panel-heading 测试表单
+

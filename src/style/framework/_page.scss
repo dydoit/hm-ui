@@ -1,0 +1,59 @@
+.page-box {
+    text-align: center;
+    .page-size {
+        display: inline-block;
+        .iconfont {
+            font-size: 6px;
+            color: #bbb;
+        }
+        .page-size-item {
+            display: inline-block;
+            width:28px;
+            height:28px;
+            line-height: 28px;
+            border: 1px solid #ddd;
+            border-radius: 4px ;
+            text-align: center;
+            margin-right: 8px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .page-size-item:hover {
+            border: 1px solid #FF8C00;
+            color: #ff8c00;
+        }
+        .active {
+            background: #FF8C00;
+            color: #fff;
+            border: 1px solid #FF8C00;
+        }
+        .active:hover {
+            background: #FF8C00;
+            color: #fff;
+            border: 1px solid #FF8C00;
+        }
+        .page-size-more {
+            display: inline-block;
+            position: relative;
+            width: 17px;
+            height: 20px;
+            line-height: 20px;
+            >a {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                color: #ccc;
+            }
+        }
+    }
+    .page-num {
+        display: inline-block;
+        >input {
+            width:48px;
+            height:28px;
+            border: 1px solid #ddd;
+            border-radius: 4px ;
+            padding: 0 5px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//间距
+.pb34 {
+  padding-bottom: 34px;
+}
+.plr20 {
+  padding: 0 20px;
+}
+.mt34 {
+  margin-top: 34px;
+}
+//右边内容
+.main {
+    height:calc(100% - 55px);
+    .list-addBox {
+      padding:20px;
+    }
+}
+//白色背景+阴影
+.admin-children {
+  background: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.12);
+}
+/*右侧主体样式*/
+.content {
+    float:left;
+    width:calc(100% - 200px);
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-body {
+    min-height: 100%;
+    padding: 0 14px 60px + 20px;
+}
+

@@ -1,0 +1,14 @@
+//buttons
+@mixin button-variant($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+}
+// Button sizes
+@mixin button-size($width, $height, $font-size, $border-radius) {
+    width:$width;
+    height:$height;
+    font-size: $font-size;
+    line-height: $height;
+    border-radius: $border-radius;
+}

@@ -1,0 +1,39 @@
+//- 找回密码一
+extends ../../layout/main.pug
+append styles
+  link(rel="stylesheet", href="/css/page/find-pass.css")
+
+block title
+  title 找回密码二
+
+block content
+  include ../../layout/login-head.pug
+  div(class="find-wrapper")
+    h4 找回密码
+    ul(class="find-steps")
+      li(class="find-steps-num")
+        div(class="active") 1
+        p 填写邮箱
+      li(class="line active")
+      li(class="line active")
+      li(class="find-steps-num")
+        div(class="active") 2
+        p 发送邮件
+      li(class="line active")
+      li(class="line")
+      li(class="find-steps-num")
+        div 3
+        p 重置密码
+    div(class="find-content")
+      div(class="find-email-succ")
+        i(class="iconfont icon-Emailsuccessfully")
+        span  邮件发送成功！
+    p(class="msg")
+          | 您好，重置密码的邮件发送至您的邮箱 <span>111</span>中，请注意查收。 点击邮件中的链接即可重新设置密码，该链接10分钟内有效，请尽快登录邮箱重置密码。
+
+
+
+
+
+
+  include ../../layout/login-foot.pug

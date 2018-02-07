@@ -1,0 +1,38 @@
+// 表单验证状态
+//
+//
+@mixin form-control-validation($text-color: #555, $border-color: #ccc, $background-color: #f5f5f5) {
+  // 设置 label 和 help text 的颜色
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-online,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label {
+    color: $text-color;
+  }
+
+  // 设置 input 的 border 和 box shadow
+  .form-control {
+    border-color: $border-color;
+    &:focus {
+      border-color: darken($border-color, 10%);
+      box-shadow: 0 0 6px lighten($border-color, 20%);
+    }
+  }
+}
+
+// 表单 focus 状态
+//
+@mixin form-control-focus($color: $input-border-focus) {
+  $color-rgba: rgba(red($color), green($color), blue($color), .6);
+  &:focus {
+    border-color: $color;
+    outline: 0;
+    box-shadow: 0 0 8px $color-rgba;
+  }
+}

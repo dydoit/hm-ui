@@ -1,0 +1,68 @@
+//- profile.pug
+extends ../../layout/index-main.pug
+
+append styles
+  link(rel="stylesheet", href="/css/site/site.css")
+  link(rel="stylesheet", href="/css/page/profile.css")
+
+block title
+  title 个人中心
+
+block content-body
+  .profile
+    .panel
+      .panel-heading
+        | 基本信息
+      .panel-body
+        form
+          .row
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="username") 用户名
+                input(type="text", class="form-control", name="username", value="haima" readonly)
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="email") 邮箱
+                input(type="email", class="form-control", name="email", value="523894318@qq.com" readonly)
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="role") 角色
+                input(type="text", class="form-control", name="role", value="管理员" readonly)
+          .row
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="phone") 联系电话
+                input(type="text", class="form-control", name="phone", value="13850144066")
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="name") 姓名
+                input(type="text", class="form-control", name="name", value="小姐姐")
+          .row
+            .col-sm-12.col-md-4
+              button(type="button").btn.btn-big.btn-primary
+                | 保存
+    .panel
+      .panel-heading
+        | 更改密码
+      .panel-body
+        form
+          .row
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="old-password") 原密码
+                input(type="password", class="form-control", name="old-password")
+            .col-sm-12.col-md-4
+              .form-group
+                label(for="new-password") 新密码
+                input(type="password", class="form-control", name="new-password")
+            .col-sm-12.col-md-4
+              .form-group.has-error
+                label(for="confirm-password") 二次确认
+                input(type="password", class="form-control", name="confirm-password" )
+                p.help-block
+                  i.iconfont.icon-message
+                  |  两次输入的密码不一致
+          .row
+            .col-sm-12.col-md-4
+              button(type="button").btn.btn-big.btn-primary
+                | 保存
