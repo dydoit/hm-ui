@@ -1,6 +1,7 @@
 extends ../../layout/index-main.pug
 append styles
   link(rel="stylesheet", href="/css/site/site.css")
+  link(rel="stylesheet", href="/css/page/audit.css")
 
 block title
   title 审核管理
@@ -20,6 +21,26 @@ block content-body
         a 认证审核
   #panels
     .panel
+      .pd20
+        form(action="#",class="form-inline")
+            .form-group
+              lable 活动类型
+              select(name="activity-type",class="form-control")
+                option(value="-1")  请选择
+            .form-group
+              lable 审核状态
+              select(name="activity-type",class="form-control")
+                option(value="-1")  请选择
+            .form-group
+              lable 审核时间
+              input(type="text",class="form-control")
+            .form-group
+              lable 经销商
+              input(type="text" value="经销商名称",class="form-control")
+            .form-group
+              lable 活动标题
+              input(type="text" value="经销商名称",class="form-control")
+
 
 
 
