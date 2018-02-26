@@ -1,0 +1,27 @@
+//- test.pug
+extends ../../layout/index-main.pug
+append styles
+  link(rel="stylesheet", href="/css/site/site.css")
+  link(rel="stylesheet", href="/css/page/test.css")
+
+block title
+  title 主要布局测试
+
+block content-body
+  .test
+    ul
+      li.list
+        dl
+          dt
+            i
+            span  账号管理
+          dd
+            div
+              i
+              span  角色管理
+          dd
+            div
+              i
+              span  用户管理
+
+

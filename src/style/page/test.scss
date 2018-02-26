@@ -1,0 +1,40 @@
+.test {
+  width:290px;
+  height:190px;
+  margin:20px auto;
+  border:1px solid red;
+  background-color: #fff;
+  text-align: justify;
+}
+ul {
+  padding:10px;
+  li {
+    &.list {
+      border-left:1px solid #ddd;
+      dt {
+        background: #fff;
+        margin-left:-7px;
+        margin-bottom:10px;
+        padding-bottom: 6px;
+      }
+      dd {
+        margin:0;
+        margin-bottom:20px;
+        border-bottom:1px solid #ddd;
+        >div {
+          margin-left:22px;
+          padding-left:8px;
+          background:#fff;
+          margin-bottom:-7px;
+        }
+      }
+    }
+    i {
+      display: inline-block;
+      vertical-align: -3px;
+      width:15px;
+      height:15px;
+      border:1px solid #000;
+    }
+  }
+}

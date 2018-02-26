@@ -1,0 +1,28 @@
+/*弹出框*/
+.mask {
+  position: absolute;
+  z-index:999;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  text-align: center;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  &:after {
+    content:'';
+    display: inline-block;
+    height:100%;
+    vertical-align: middle;
+  }
+}
+.dialog {
+  display: inline-block;
+  vertical-align: middle;
+  width:290px;
+  height:190px;
+  background-color: #fff;
+  border-radius:8px;
+  .select-group {
+    text-align: justify;
+  }
+}
